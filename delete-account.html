@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Onoma — Hesap Silme / Delete Account</title>
+<meta name="robots" content="index,follow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#FAF6EC; --surface:#FFFDF7; --ink:#241C11; --ink-muted:#5C5140;
+    --gilt:#8A5F1E; --rule:#E7DFC9; --shadow:0 1px 2px rgba(36,28,17,.06),0 8px 24px rgba(36,28,17,.05);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141109; --surface:#1D1810; --ink:#F2E9D6; --ink-muted:#B6A98C; --gilt:#D8AE63; --rule:#332B1C; --shadow:none; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:"Source Sans 3",system-ui,-apple-system,Segoe UI,Roboto,sans-serif; line-height:1.65; font-size:17px;}
+  .wrap{max-width:720px; margin:0 auto; padding:32px 20px 80px}
+  header{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:28px}
+  .brand{font-family:"Fraunces",Georgia,serif; font-weight:700; font-size:26px; color:var(--gilt); letter-spacing:-.01em}
+  .brand small{display:block; font-family:"Source Sans 3",sans-serif; font-weight:400; font-size:13px; color:var(--ink-muted); letter-spacing:.02em}
+  .langs{display:flex; gap:4px; background:var(--surface); border:1px solid var(--rule); border-radius:10px; padding:4px; box-shadow:var(--shadow)}
+  .langs button{font:inherit; font-size:14px; font-weight:600; cursor:pointer; border:0; border-radius:7px; padding:6px 14px; color:var(--ink-muted); background:transparent;}
+  .langs button[aria-pressed="true"]{background:var(--bg); color:var(--gilt)}
+  h1{font-family:"Fraunces",Georgia,serif; font-weight:700; font-size:32px; line-height:1.2; margin:.2em 0 .1em}
+  h2{font-family:"Fraunces",Georgia,serif; font-weight:600; font-size:22px; margin:1.6em 0 .4em; color:var(--ink)}
+  p,li{color:var(--ink)} .muted{color:var(--ink-muted)}
+  a{color:var(--gilt); text-underline-offset:2px}
+  .card{background:var(--surface); border:1px solid var(--rule); border-radius:14px; padding:18px 20px; margin:18px 0; box-shadow:var(--shadow)}
+  ol{padding-left:1.2em} li{margin:.4em 0}
+  footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--rule); color:var(--ink-muted); font-size:14px}
+  .lang-en{display:none}
+  body.en .lang-en{display:block} body.en .lang-tr{display:none}
+  body.en h1.lang-en{display:block} h1.lang-en{display:none}
+</style>
+</head>
+<body class="tr">
+<div class="wrap">
+  <header>
+    <div class="brand">Onoma<small class="lang-tr">İsim Anlamı &amp; Kültür</small><small class="lang-en">Name Meaning &amp; Culture</small></div>
+    <div class="langs" role="group" aria-label="Language">
+      <button id="btn-tr" aria-pressed="true" onclick="setLang('tr')">Türkçe</button>
+      <button id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <h1 class="lang-tr">Hesabını ve Verilerini Silme</h1>
+  <h1 class="lang-en">Delete Your Account &amp; Data</h1>
+
+  <div class="lang-tr">
+    <div class="card">
+      <p class="muted">Onoma hesabını ve ona bağlı tüm verini istediğin an kalıcı olarak silebilirsin. İşlem geri alınamaz.</p>
+    </div>
+
+    <h2>Yol 1 — Uygulama içinden (anında)</h2>
+    <ol>
+      <li>Onoma'yı aç ve giriş yap.</li>
+      <li><strong>Ayarlar → Hesabı ve veriyi sil</strong> adımına git.</li>
+      <li>Onayla. Hesabın, arama geçmişin ve jeton bakiyen kalıcı olarak silinir.</li>
+    </ol>
+
+    <h2>Yol 2 — E-posta ile</h2>
+    <p>Uygulamaya erişemiyorsan, hesabına ait e-posta adresinden <a href="mailto:destek@onoma.app?subject=Hesap%20Silme%20Talebi">destek@onoma.app</a> adresine "Hesap Silme Talebi" konulu bir e-posta gönder. Talebini en geç 30 gün içinde yerine getiririz.</p>
+
+    <h2>Neler silinir?</h2>
+    <ul>
+      <li>Hesabın ve e-posta adresin</li>
+      <li>Arama geçmişin (hesabına bağlı okumalar)</li>
+      <li>Jeton bakiyen ve işlem kayıtların</li>
+    </ul>
+    <p class="muted">Not: Satın alma makbuzları, yasal ve muhasebe yükümlülükleri gereği ilgili mağaza (Google Play / App Store) tarafında saklanmaya devam edebilir; bu kayıtlar Onoma'nın kontrolünde değildir.</p>
+
+    <h2>İletişim</h2>
+    <p><a href="mailto:destek@onoma.app">destek@onoma.app</a></p>
+  </div>
+
+  <div class="lang-en">
+    <div class="card">
+      <p class="muted">You can permanently delete your Onoma account and all associated data at any time. This action cannot be undone.</p>
+    </div>
+
+    <h2>Option 1 — In the app (instant)</h2>
+    <ol>
+      <li>Open Onoma and sign in.</li>
+      <li>Go to <strong>Settings → Delete account and data</strong>.</li>
+      <li>Confirm. Your account, search history and token balance are permanently deleted.</li>
+    </ol>
+
+    <h2>Option 2 — By email</h2>
+    <p>If you can't access the app, email <a href="mailto:destek@onoma.app?subject=Account%20Deletion%20Request">destek@onoma.app</a> from your account's email address with the subject "Account Deletion Request". We fulfil requests within 30 days.</p>
+
+    <h2>What is deleted?</h2>
+    <ul>
+      <li>Your account and email address</li>
+      <li>Your search history (readings tied to your account)</li>
+      <li>Your token balance and transaction records</li>
+    </ul>
+    <p class="muted">Note: Purchase receipts may be retained by the relevant store (Google Play / App Store) for legal and accounting obligations; those records are not under Onoma's control.</p>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:destek@onoma.app">destek@onoma.app</a></p>
+  </div>
+
+  <footer>
+    <p>© 2026 Onoma · <a href="./privacy.html"><span class="lang-tr">Gizlilik</span><span class="lang-en">Privacy</span></a> · <a href="./terms.html"><span class="lang-tr">Koşullar</span><span class="lang-en">Terms</span></a></p>
+  </footer>
+</div>
+
+<script>
+  function setLang(l){
+    document.body.className = l;
+    document.documentElement.lang = l;
+    document.getElementById('btn-tr').setAttribute('aria-pressed', l==='tr');
+    document.getElementById('btn-en').setAttribute('aria-pressed', l==='en');
+    try{ localStorage.setItem('onoma-legal-lang', l); }catch(e){}
+  }
+  (function(){
+    var saved; try{ saved = localStorage.getItem('onoma-legal-lang'); }catch(e){}
+    var nav = (navigator.language||'tr').slice(0,2);
+    setLang(saved || (nav==='en'?'en':'tr'));
+  })();
+</script>
+</body>
+</html>

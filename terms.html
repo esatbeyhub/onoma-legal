@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Onoma — Kullanım Koşulları / Terms of Use</title>
+<meta name="robots" content="index,follow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#FAF6EC; --surface:#FFFDF7; --ink:#241C11; --ink-muted:#5C5140;
+    --gilt:#8A5F1E; --rule:#E7DFC9; --shadow:0 1px 2px rgba(36,28,17,.06),0 8px 24px rgba(36,28,17,.05);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141109; --surface:#1D1810; --ink:#F2E9D6; --ink-muted:#B6A98C; --gilt:#D8AE63; --rule:#332B1C; --shadow:none; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Source Sans 3",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    line-height:1.65; font-size:17px;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:32px 20px 80px}
+  header{display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:28px}
+  .brand{font-family:"Fraunces",Georgia,serif; font-weight:700; font-size:26px; color:var(--gilt); letter-spacing:-.01em}
+  .brand small{display:block; font-family:"Source Sans 3",sans-serif; font-weight:400; font-size:13px; color:var(--ink-muted); letter-spacing:.02em}
+  .langs{display:flex; gap:4px; background:var(--surface); border:1px solid var(--rule); border-radius:10px; padding:4px; box-shadow:var(--shadow)}
+  .langs button{
+    font:inherit; font-size:14px; font-weight:600; cursor:pointer; border:0; border-radius:7px;
+    padding:6px 14px; color:var(--ink-muted); background:transparent;
+  }
+  .langs button[aria-pressed="true"]{background:var(--bg); color:var(--gilt)}
+  h1{font-family:"Fraunces",Georgia,serif; font-weight:700; font-size:32px; line-height:1.2; margin:.2em 0 .1em}
+  h2{font-family:"Fraunces",Georgia,serif; font-weight:600; font-size:22px; margin:1.8em 0 .4em; color:var(--ink)}
+  p,li{color:var(--ink)} .muted{color:var(--ink-muted)}
+  .eff{color:var(--ink-muted); font-size:15px; margin-top:.2em}
+  a{color:var(--gilt); text-underline-offset:2px}
+  .card{background:var(--surface); border:1px solid var(--rule); border-radius:14px; padding:18px 20px; margin:18px 0; box-shadow:var(--shadow)}
+  ul{padding-left:1.2em} li{margin:.3em 0}
+  footer{margin-top:48px; padding-top:20px; border-top:1px solid var(--rule); color:var(--ink-muted); font-size:14px}
+  .lang-en{display:none}
+  body.en .lang-en{display:block} body.en .lang-tr{display:none}
+  body.en h1.lang-en,body.en h2.lang-en{display:block}
+  h1.lang-en,h2.lang-en{display:none}
+</style>
+</head>
+<body class="tr">
+<div class="wrap">
+  <header>
+    <div class="brand">Onoma<small class="lang-tr">İsim Anlamı &amp; Kültür</small><small class="lang-en">Name Meaning &amp; Culture</small></div>
+    <div class="langs" role="group" aria-label="Language">
+      <button id="btn-tr" aria-pressed="true" onclick="setLang('tr')">Türkçe</button>
+      <button id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- ══ TÜRKÇE ══ -->
+  <h1 class="lang-tr">Kullanım Koşulları</h1>
+  <h1 class="lang-en">Terms of Use</h1>
+  <p class="eff"><span class="lang-tr">Yürürlük tarihi: 3 Eylül 2026</span><span class="lang-en">Effective date: 3 September 2026</span></p>
+
+  <div class="lang-tr">
+    <div class="card">
+      <p class="muted">Onoma'yı kullanarak bu koşulları kabul etmiş olursun. Onoma, isimlerin anlamı ve kültürel bağlamı üzerine bir keşif uygulamasıdır; eğlence ve bilgilendirme amaçlıdır, profesyonel danışmanlık değildir.</p>
+    </div>
+
+    <h2>1. Hizmet</h2>
+    <p>Onoma bir ismin dilsel kökenini, anlamını ve kültürel çağrışımlarını sunar. Ücretsiz temel sonucun yanında, jetonla açılan daha ayrıntılı bir "derin okuma" sunulur. İçerik kültürel yorum ve merak içindir; <strong>psikolojik, tıbbi veya klinik bir değerlendirme, kişilik testi ya da gelecek tahmini değildir.</strong></p>
+
+    <h2>2. Hesap</h2>
+    <p>Uygulamayı misafir olarak kullanabilirsin. Geçmişini cihazlar arasında taşımak için e-posta, Google veya Apple ile hesap oluşturabilirsin. Hesabının güvenliğinden sen sorumlusun.</p>
+
+    <h2>3. Jetonlar ve satın almalar</h2>
+    <ul>
+      <li>Jetonlar, derin okuma üretmek için harcanan sanal birimlerdir; gerçek para değildir ve nakde çevrilemez.</li>
+      <li>Satın almalar Google Play veya Apple App Store üzerinden yapılır ve o mağazanın kuralları ile iade politikasına tabidir.</li>
+      <li>Bir derin okuma teknik bir hata nedeniyle üretilemezse, harcanan jeton otomatik olarak iade edilir.</li>
+    </ul>
+
+    <h2>4. Kabul edilebilir kullanım</h2>
+    <p>Onoma'yı yasa dışı, zararlı, taciz edici amaçlarla ya da hizmeti kötüye kullanacak (otomatik toplu istek, tersine mühendislik, güvenlik atlatma) biçimde kullanmamayı kabul edersin.</p>
+
+    <h2>5. Sorumluluğun sınırı</h2>
+    <p>Hizmet "olduğu gibi" sunulur. Üretilen içeriğin doğruluğu, eksiksizliği veya belirli bir amaca uygunluğu konusunda garanti vermeyiz. Onoma'nın içeriğine dayanarak alacağın kararlardan Onoma sorumlu tutulamaz.</p>
+
+    <h2>6. Fikri mülkiyet</h2>
+    <p>Uygulama, markası ve tasarımı Onoma'ya aittir. Kişisel, ticari olmayan kullanımın için sana sınırlı bir kullanım hakkı verilir.</p>
+
+    <h2>7. Değişiklikler ve sona erme</h2>
+    <p>Bu koşulları güncelleyebilir, hizmeti değiştirebilir veya durdurabiliriz. Bu koşulları ihlal edersen erişimini askıya alabiliriz.</p>
+
+    <h2>8. İletişim</h2>
+    <p>Sorular için: <a href="mailto:destek@onoma.app">destek@onoma.app</a></p>
+  </div>
+
+  <!-- ══ ENGLISH ══ -->
+  <div class="lang-en">
+    <div class="card">
+      <p class="muted">By using Onoma you agree to these terms. Onoma is an app for exploring the meaning and cultural context of names; it is for entertainment and information, not professional advice.</p>
+    </div>
+
+    <h2>1. The service</h2>
+    <p>Onoma presents the linguistic roots, meaning and cultural associations of a name. Alongside a free basic result, a more detailed "deep reading" is available using tokens. The content is cultural interpretation and curiosity; it is <strong>not a psychological, medical or clinical assessment, personality test or prediction of the future.</strong></p>
+
+    <h2>2. Account</h2>
+    <p>You may use the app as a guest. To carry your history across devices you can create an account with email, Google or Apple. You are responsible for your account's security.</p>
+
+    <h2>3. Tokens and purchases</h2>
+    <ul>
+      <li>Tokens are virtual units spent to produce a deep reading; they are not real money and cannot be redeemed for cash.</li>
+      <li>Purchases are made through Google Play or the Apple App Store and are subject to that store's rules and refund policy.</li>
+      <li>If a deep reading cannot be produced due to a technical error, the spent token is refunded automatically.</li>
+    </ul>
+
+    <h2>4. Acceptable use</h2>
+    <p>You agree not to use Onoma for unlawful, harmful or abusive purposes, or in ways that misuse the service (automated bulk requests, reverse engineering, bypassing security).</p>
+
+    <h2>5. Limitation of liability</h2>
+    <p>The service is provided "as is". We make no warranty as to the accuracy, completeness or fitness for a particular purpose of the generated content. Onoma is not liable for decisions you make based on its content.</p>
+
+    <h2>6. Intellectual property</h2>
+    <p>The app, its brand and design belong to Onoma. You are granted a limited right to use it for your personal, non-commercial use.</p>
+
+    <h2>7. Changes and termination</h2>
+    <p>We may update these terms and modify or discontinue the service. We may suspend your access if you breach these terms.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions: <a href="mailto:destek@onoma.app">destek@onoma.app</a></p>
+  </div>
+
+  <footer>
+    <p>© 2026 Onoma · <a href="./privacy.html"><span class="lang-tr">Gizlilik Politikası</span><span class="lang-en">Privacy Policy</span></a></p>
+  </footer>
+</div>
+
+<script>
+  function setLang(l){
+    document.body.className = l;
+    document.documentElement.lang = l;
+    document.getElementById('btn-tr').setAttribute('aria-pressed', l==='tr');
+    document.getElementById('btn-en').setAttribute('aria-pressed', l==='en');
+    try{ localStorage.setItem('onoma-legal-lang', l); }catch(e){}
+  }
+  (function(){
+    var saved; try{ saved = localStorage.getItem('onoma-legal-lang'); }catch(e){}
+    var nav = (navigator.language||'tr').slice(0,2);
+    setLang(saved || (nav==='en'?'en':'tr'));
+  })();
+</script>
+</body>
+</html>
